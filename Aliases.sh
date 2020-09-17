@@ -1,8 +1,7 @@
 #!/bin/bash
-# Version 1
 
- alias a="emacs -nw $HOME/BASH/Aliases.sh; rm $HOME/BASH/Aliases.sh~; exit"
- alias b="sudo emacs -nw /etc/default/grub; sudo rm /etc/default/grub~
+ alias a="emacs -nw $HOME/.bash_aliases; rm $HOME/Bash/Aliases.sh~ 2> /dev/null; exit"
+ alias b="sudo emacs -nw /etc/default/grub; sudo rm /etc/default/grub~ 2> /dev/null
           sudo update-grub; exit"
        c() { echo $(($@)); }
  alias d="dpkg -l | grep"
